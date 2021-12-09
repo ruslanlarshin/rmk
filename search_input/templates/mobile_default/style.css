@@ -1,0 +1,131 @@
+input{
+	outline: none;
+}
+.td_setting{
+	//position: absolute;
+}
+.setting_window{
+	position: absolute;
+	width: 300px; 
+	height: 100px;
+	background-color: white;
+	border-right: 1px solid #00a9ee;
+	border-left: 1px solid #00a9ee;
+	border-top: 1px solid #00a9ee;
+	border-bottom: 1px solid #00a9ee;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 20px;
+	padding-left: 5px;
+	padding-top: 5px;
+	box-shadow: black 2px 2px 4px 1px;
+	display: none;
+}
+.active .setting_window{
+	display: block !important;
+}
+.td_setting img{
+	width: 15px;
+	cursor:pointer;
+}
+.setting_name{
+	margin-top: 12px;
+	margin-left: 20px;
+	padding: 3px;
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-left: 8px;	
+	top: 1px;
+}
+.active .setting_name{
+	border-top: 1px solid #00a9ee;
+	border-left: 1px solid #00a9ee;
+	border-right: 1px solid #00a9ee;
+	border-bottom: 1px solid white;
+	position: relative;
+	background-color: white;
+	z-index: 999;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	//box-shadow: black 1px 1px 4px 1px;
+}
+.td_setting span{
+	position: relative;
+	top: -3px;
+	border-bottom: 1px dotted #00a9ee;
+	color: #00a9ee;
+	cursor:pointer;
+}
+.no_select{
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.group_by_book{
+	font-size: 12px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.search{
+	position: relative;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.search input{
+	width: 450px !important;
+	height: 25px;
+	border-radius: 10px;
+	box-shadow: #00a9ee 1px 1px 7px 1px;
+	padding-left: 10px !important;
+	font-size: 12px;
+	padding-right: 22px !important;
+}
+.search img{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	margin-left: -22px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.search span{
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+.shadow{
+	box-shadow: rgb(153, 153, 153) 1px 1px 1px 1px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none; 
+	width: 10px;	
+}
+.shadow.active{
+	box-shadow: rgb(153, 153, 153) 0px 0px 1px 1px;
+	position: relative;
+	right: -2px;
+}
+.checkbox{
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	margin-right: -2px;
+	box-shadow: rgb(153, 153, 153) 0px 0px 6px 0px inset;
+	background-color: rgb(253, 253, 253);
+}
+.checkbox.active{
+	box-shadow: rgb(153, 153, 153) 0px 0px 5px 0px inset;
+	background-color: #00a9ee;
+}
+.hidden{
+	display:none;
+}
+.search_result{
+	min-height: 200px;
+}
+.load{
+	background: url(/images/load.gif) 50% 50px no-repeat;
+}
